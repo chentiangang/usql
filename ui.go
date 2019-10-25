@@ -44,7 +44,7 @@ var (
 		Help:     "Use: \x1b[91m↓(j) ↑(k) → ← \x1b[0m Search: \x1b[91m/\x1b[0m ",
 		Label:    "✨ {{ . | green}}",
 		Active:   "➤  {{ .Name | cyan }} {{if .Url}}{{.Url | cyan}}{{end}}",
-		Selected: "{{ ✔ | green}}  {{ .Name | cyan | cyan }}",
+		Selected: fmt.Sprintf(`{{ "%s" | green }} {{ .Name | faint }}`, promptui.IconGood),
 		Inactive: "  {{.Name | faint}} ",
 	}
 )
