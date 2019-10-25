@@ -9,7 +9,7 @@ import (
 	"os/user"
 	"strings"
 
-	"project/usql/internal"
+	"./internal"
 
 	"github.com/xo/usql/drivers"
 	"github.com/xo/usql/env"
