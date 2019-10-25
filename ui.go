@@ -44,7 +44,7 @@ var (
 		Help:     "Use: \x1b[91m↓(j) ↑(k) → ← \x1b[0m Search: \x1b[91m/\x1b[0m ",
 		Label:    "✨ {{ . | green}}",
 		Active:   "➤  {{ .Name | cyan }} {{if .Url}}{{.Url | cyan}}{{end}}",
-		Selected: "✔  {{ .Name | cyan | cyan }}",
+		Selected: "{{ ✔ | green}}  {{ .Name | cyan | cyan }}",
 		Inactive: "  {{.Name | faint}} ",
 	}
 )
